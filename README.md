@@ -1,8 +1,21 @@
 UPS
 ===
 
-This board takes up to 100V input(use 75V TVS for margin) and has two outputs:
+This project holds two boards:
 
-1. One output is 24V directly unprotected.
-2. Second output protected by a UPS, boosted from 12V(3-cells li-ion battery) to 23V.
+Common Features:
+
+* **75V to 24V buck converter**: Active current Limit (Default 6A, adjustable).
+* **12V battery charger**. The charge current defaults to 1A and can be adjusted to 6A max.
+
+The difference:
+
+* Without booster: When power is lost, the protected output will change from 24V to the battery's voltage(12-9V).
+* With booster: When power is lost, the protected output will be 24V contant. Because the booster will drain current even if no load is connected, to avoid draining the battery, the output will be shutdown after some adjustable time.
+
+| Board  |   24V Output  | Protected Output | 12V battery charger | Delayed Shutdown |
+| ----- | ----- | ----- | ---- | ---- |
+| Without Boost | Yes | 24V or 12V   | Yes | No |
+| With Boost   | Yes | 24V stable | Yes | Yes |
+
 
