@@ -1,12 +1,14 @@
 UPS
 ===
 
+| **Warning:** A WORK in PROGRESS
+
 This project holds two boards:
 
 Common Features:
 
 * **75V to 24V buck converter**: Active current Limit (Default 6A, adjustable).
-* **12V battery charger**. The charge current defaults to 1A and can be adjusted to 6A max.
+* **12V battery charger**: 1A charge current (can be adjusted to 6A max).
 
 The difference:
 
@@ -15,7 +17,7 @@ The difference:
 
 | Board  |   24V Output  | Protected Output | 12V battery charger | Delayed Shutdown |
 | ----- | ----- | ----- | ---- | ---- |
-| Without Boost | Yes | 24V or 12V   | Yes | No |
-| With Boost   | Yes | 24V stable | Yes | Yes |
+| Without Booster | Yes | 24V or 12V   | Yes | No |
+| With Booster   | Yes | 24V stable | Yes | Yes |
 
-![alt text](image.png)
+![Board Image](./image.png)
