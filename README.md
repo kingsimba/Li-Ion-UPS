@@ -18,4 +18,4 @@ The difference:
 | Without Boost | Yes | 24V or 12V   | Yes | No |
 | With Boost   | Yes | 24V stable | Yes | Yes |
 
-
+![alt text](image.png)
